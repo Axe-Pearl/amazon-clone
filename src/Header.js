@@ -22,7 +22,7 @@ function Header() {
                 <span className="option2">Returns & Orders</span>
             </div>
             <div className="header_option">
-            <span className="basketicon"><ShoppingCartIcon/><span className="basketcount">{basket.length}</span></span>
+            <span className="basketicon"><ShoppingCartIcon/><span className="basketcount">{basket?.length}</span></span>
             </div>
             </div>
         </div>

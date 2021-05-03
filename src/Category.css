@@ -1,19 +1,24 @@
 .category_container{
-    max-width: 400px;;
+    max-width: 350px;
+    height: 400px;
     margin-top:-300px;
     margin-left: 10px;
     margin-right: 10px;
     float: left;
-    margin-bottom:400px;
+    margin-bottom:320px;
     background-color:white;
     z-index:3;
-}
-h4{
-    float:left;
-    margin-left:12px;
-    align-items: flex-start;
 }
 h5{
     float:left;
     margin-left:12px;
+    align-items: flex-start;
+}
+h6{
+    float:left;
+    margin-left:12px;
+}
+.image{
+    max-width:300px;
+    object-fit:contain;
 }

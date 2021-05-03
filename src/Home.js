@@ -42,6 +42,8 @@ function Home() {
 You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. Click here to go to amazon.in
 </div>
 <div>{categories.map(doentry)}</div>
+<div className="colori">
+</div>
 </div>
 );
 }

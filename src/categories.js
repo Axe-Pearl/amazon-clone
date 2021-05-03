@@ -20,15 +20,33 @@ const categories=[
     {
         id:4,
         key:4,
-        cate:"Computers & Accessories",
-        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg"
+        cate:"Get fit at home",
+        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg"
     },
     {
         id:5,
         key:5,
-        cate:"Computers & Accessories",
-        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg"
+        cate:"Deals & Promotions",
+        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Deals_1x._SY304_CB430401028_.jpg"
     },
+    {
+        id:6,
+        key:6,
+        cate:"Shop Laptops & Tablets",
+        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg"
+    },
+    {
+        id:7,
+        key:7,
+        cate:"Explore home bedding",
+        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_HomeBedding_Single_Cat_1x._SY304_CB418596953_.jpg"
+    },
+    {
+        id:8,
+        key:8,
+        cate:"Create with strip lights",
+        imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_StripLighting_379x304_1X_en_US._SY304_CB418597476_.jpg"
+    }
     
 ];
 export default categories;
