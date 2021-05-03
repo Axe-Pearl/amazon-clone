@@ -1,0 +1,39 @@
+.filtero{
+    max-width: 400px;
+    align-items: flex-start;
+    float:left;
+    position: relative;
+    border:solid;
+}
+
+.product_container{
+    top:300px;
+    display: inline-block;
+    max-width: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top:10px;
+    background-color: white;
+}
+.product_img{
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+h5{
+    float:left;
+    margin-left:12px;
+    align-items: flex-start;
+}
+h6{
+    font-weight: bold;
+    float:left;
+    margin-left:40px;
+}
+.rating{
+    align-items: center;
+    display: block;
+}
