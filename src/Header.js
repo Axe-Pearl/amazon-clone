@@ -6,8 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useStateValue} from "./StateProvider";
 function Header() {
      // eslint-disable-next-line
-    const [{cart},dispatch]=useStateValue();
-    console.log("cart",cart);
+    const [{basket},dispatch]=useStateValue();
     return (
         <div className="header">
             <img className="header_logo" alt="logo" src="http://pngimg.com/uploads/amazon/amazon_PNG25.png"/>
@@ -23,7 +22,7 @@ function Header() {
                 <span className="option2">Returns & Orders</span>
             </div>
             <div className="header_option">
-            <span className="basketicon"><ShoppingCartIcon/><span className="basketcount">{cart?.length}</span></span>
+            <span className="basketicon"><ShoppingCartIcon/><span className="basketcount">{basket.length}</span></span>
             </div>
             </div>
         </div>

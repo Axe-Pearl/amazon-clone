@@ -9,7 +9,7 @@ function App() {
     <Router>
     <div className="app">
       <Switch>
-        <Route path="/checkout">
+        <Route path="/amazon-basics">
            <Header />
            <Basic />
         </Route>

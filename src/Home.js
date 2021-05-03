@@ -3,6 +3,7 @@ import "./Home.css";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import categories from "./categories";
+// import Product from "./product.js"
 import Category from "./cat.js";
 
 function doentry(terms){
@@ -42,7 +43,7 @@ You are on amazon.com. You can also shop on Amazon India for millions of product
 </div>
 <div>{categories.map(doentry)}</div>
 </div>
-)
+);
 }
 
 export default Home;

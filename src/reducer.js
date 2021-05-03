@@ -1,15 +1,14 @@
 export const initialState={
-    cart: [],
+    basket: [],
 };
 
 const reducer = (state,action) =>{
-    //console.log("action",action);
-    console.log("cart==",...state.cart,action.item);
+    console.log("action",action);
     switch(action.type){
         case "ADD_TO_BASKET":
             return{
                 ...state,
-                cart: [...state.cart, action.item],
+                basket: [...state.basket, action.item],
             };
             default:
                 return state;

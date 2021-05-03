@@ -1,27 +1,26 @@
 import React from 'react';
-import {useStateValue} from "./StateProvider";
-function Product(props) {
-    const [{cart},dispatch]=useStateValue();
-    console.log("this is the cart>>",cart);
+import { useStateValue } from "./StateProvider";
+function Product({ id, title, imgurl, price }) {
+    const [{ basket },dispatch]=useStateValue();
+    console.log("this is the cart>>", basket);
     const addToBasket=()=>{
        dispatch({
-         type:"ADD_TO_CART",
+         type:"ADD_TO_BASKET",
          item:{
-             id:props.id,
-             title:props.title,
-             image:props.imgurl,
-             price:props.price
+             id:id,
+             title:title,
+             image:imgurl,
+             price:price
          }
        });
     }
   return (
         <div className="product_container">
             <div className="product_content">
-            <img alt="product" className="product_img" src={props.imgurl}></img>
-            <h5>{props.title}</h5>
+            <img alt="product" className="product_img" src={imgurl}></img>
+            <h5>{title}</h5>
             <p className="rating">⭐⭐⭐⭐⭐</p>
-            <h6>{props.price}</h6>
-            <h5>{props.aur}</h5>
+            <h6>{price}</h6>
             <button onClick={addToBasket}>Add to Cart</button>
             </div>
         </div>
