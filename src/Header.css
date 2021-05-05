@@ -43,22 +43,13 @@
 .basketcount{
     margin-left: 2px;
     color:yellowgreen;
+    text-decoration: none;
+    outline: none;
+    border: none
 }
-/* .option1{
-    display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
-    color:white;
+
+.linker{
+    text-decoration: none;
+    outline: none;
+    border: none
 }
-.option2{
-    display: flex;
-    color:white;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-.option3{
-    display: flex;
-    color:white;
-    margin-left: 15px;
-    margin-right: 15px;
-} */

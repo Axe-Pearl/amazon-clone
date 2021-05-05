@@ -3,6 +3,7 @@ import "./Header.css";
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link} from "react-router-dom";
 import {useStateValue} from "./StateProvider";
 function Header() {
      // eslint-disable-next-line
@@ -22,7 +23,9 @@ function Header() {
                 <span className="option2">Returns & Orders</span>
             </div>
             <div className="header_option">
-            <span className="basketicon"><ShoppingCartIcon/><span className="basketcount">{basket?.length}</span></span>
+            <Link to="/checkout">
+            <span className="basketicon linker"><ShoppingCartIcon/><span className="basketcount">{basket?.length}</span></span>
+            </Link>
             </div>
             </div>
         </div>

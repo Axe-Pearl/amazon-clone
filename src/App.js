@@ -2,6 +2,7 @@ import './App.css';
 import Header from "./Header";
 import Home from "./Home";
 import Basic from "./basic";
+import Checkout from "./checkout";
 //import Product from "./product"
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
@@ -9,6 +10,10 @@ function App() {
     <Router>
     <div className="app">
       <Switch>
+        <Route path="/checkout">
+          <Header />
+           <Checkout />
+        </Route>
         <Route path="/amazon-basics">
            <Header />
            <Basic />
