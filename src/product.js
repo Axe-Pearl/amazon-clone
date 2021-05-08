@@ -1,4 +1,5 @@
 import React from 'react';
+import "./product.css";
 import { useStateValue } from "./StateProvider";
 function Product({ id, title, imgurl, price }) {
     const [{ basket },dispatch]=useStateValue();
@@ -20,8 +21,8 @@ function Product({ id, title, imgurl, price }) {
             <img alt="product" className="product_img" src={imgurl}></img>
             <h5>{title}</h5>
             <p className="rating">⭐⭐⭐⭐⭐</p>
-            <h6>{price}</h6>
-            <button onClick={addToBasket}>Add to Cart</button>
+            <h6>₹{price}</h6>
+            <button className="add_to_cart" onClick={addToBasket}>Add to Cart</button>
             </div>
         </div>
     )

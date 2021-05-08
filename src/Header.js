@@ -16,17 +16,20 @@ function Header() {
             </div>
             
             <div className="head-nav">
+            <Link to="/login">
             <div className="header_option">
                 <span className="option1">Signin</span>
             </div>
+            </Link>
             <div className="header_option">
                 <span className="option2">Returns & Orders</span>
             </div>
-            <div className="header_option">
             <Link to="/checkout">
-            <span className="basketicon linker"><ShoppingCartIcon/><span className="basketcount">{basket?.length}</span></span>
-            </Link>
+            <div className="header_option">
+            <span className="basketicon linker"><ShoppingCartIcon/><span className="basketcount">{basket?.length}</span>
+            </span>
             </div>
+            </Link>
             </div>
         </div>
     )

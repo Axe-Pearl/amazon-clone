@@ -1,18 +1,19 @@
 .background{
     display: inline-block;
-    background-color:blanchedalmond;
+    background-color: #EAEDED!important;
     height:5000px;
-    width: 2000px;
+    width:100%;
 }
 .shopping_cart{  
     display: block;
-    width: 1000px;
+    width: 1100px;
     height: auto;
     margin-left: 40px;
     margin-top:100px;
     margin-bottom: 30px;
     background-color:white;
     padding-top: 26px;
+    padding-bottom: 26px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -35,7 +36,6 @@
     margin-left: 30px;
     margin-right: 20px;
     margin-top:30px;
-    margin-bottom: 60px;
     flex-direction: row;
 } 
 .imageitems{
@@ -67,5 +67,28 @@
     font-family: "Amazon Ember",Arial,sans-serif;
 }
 .remove_cart{
-    display: inline-block;
+    display: inline-flex;
+}
+
+.remove_from_cart{
+        background:orange;
+        border-radius: 0.5rem;
+        border-color: #D5D9D9;
+        border-style: solid;
+}
+.subtotal{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    background-color: white;
+    width: 300px;
+    right:30px;
+    margin-right:5px;
+    height:auto ;
+    padding:10px 10px 20px 10px;
+    margin-top:130px;
+    top:30px;
+    position: absolute;
+}
+.checkout_btn{
+    background-color:#FFA500;
+    border-radius: 0.5rem;
 }

@@ -8,7 +8,7 @@ import Category from "./cat.js";
 
 function doentry(terms){
   return(
-    <Category cate={terms.cate} imgurl={terms.imgurl}/>
+    <Category cate={terms.cate} imgurl={terms.imgurl} loc={terms.loc}/>
   );
   
 }

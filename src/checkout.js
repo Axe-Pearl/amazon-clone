@@ -1,6 +1,7 @@
 import React from "react";
 import {useStateValue} from "./StateProvider";
 import "./checkout.css";
+import Subtotal from "./subtotal";
 function Cart_checker(){
   // eslint-disable-next-line
   const [{basket},dispatch]=useStateValue();
@@ -49,11 +50,11 @@ function Ybasket(items){
            <h6>{items.title}</h6>
          </div>
          <div className="price">
-           <h6>{items.price}</h6>
+           <h6>₹{items.price}</h6>
          </div>
        </div>
        <div className="remove_cart">
-           <button onClick={removeFromBasket}>Remove from Cart</button>
+           <button className="remove_from_cart" onClick={removeFromBasket}>Remove from Cart</button>
        </div>
          <div className="seperator"></div>
      </div>
@@ -68,7 +69,8 @@ function Checkout(){
          {Cart_checker()}
          {basket.map(Ybasket)}
         </div>
-        </div>  
+        <Subtotal />
+        </div>
   );
 }
 

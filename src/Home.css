@@ -16,16 +16,16 @@
 }
 .carousel-control-next-icon{
                 background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbBts-oCdZwkIxeZbNqo8Qbs00GUKQmhKzLg&usqp=CAU);  
-                height: 100px;
-                 width: 150px;
+                height:40px;
+                 width: 40px;
                  right:20px;
                  top:80px;
                  position: absolute;
               }
 .carousel-control-prev-icon{
                 background-image : url(https://e7.pngegg.com/pngimages/737/275/png-clipart-computer-icons-arrow-icon-design-iphone-arrow-angle-triangle.png);                  
-                height: 100px;
-                width: 150px;
+                height: 40px;
+                width: 40px;
                 left:20px;
                 top:80px;
                 position: absolute;
