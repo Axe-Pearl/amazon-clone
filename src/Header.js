@@ -4,10 +4,16 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from "react-router-dom";
+import {auth} from "./firebase.js";
 import {useStateValue} from "./StateProvider";
 function Header() {
      // eslint-disable-next-line
-    const [{basket},dispatch]=useStateValue();
+    const [{basket,user},dispatch]=useStateValue();
+    const handleAuthentication = ()=>{
+        if(user){
+            auth.signOut();
+        }
+    }
     return (
         <div className="header">
             <img className="header_logo" alt="logo" src="http://pngimg.com/uploads/amazon/amazon_PNG25.png"/>
@@ -16,9 +22,9 @@ function Header() {
             </div>
             
             <div className="head-nav">
-            <Link to="/login">
-            <div className="header_option">
-                <span className="option1">Signin</span>
+            <Link to={!user && "/login"}>
+            <div onClick={handleAuthentication} className="header_option">
+                <span className="option1">{user ?'Signout':'Signin'}</span>
             </div>
             </Link>
             <div className="header_option">

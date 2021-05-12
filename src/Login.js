@@ -36,10 +36,10 @@ function Login() {
             <h3>Sign-in</h3>
             <form className="login_form">
                 <h5>E-mail</h5>
-                <input onChange={(e)=>setEmail(e.target.value)} type="text" value={email} />
+                <input onChange={(e)=>setEmail(e.target.value)} type="text" />
                 
                 <h5>Password</h5>
-                <input onChange={(e)=>setPassword(e.target.value)} type="password" value={password} />
+                <input onChange={(e)=>setPassword(e.target.value)} type="password" />
                 
                 <button type="submit" onClick={signin} className="signin_btn">Sign In</button>
 
