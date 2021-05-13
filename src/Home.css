@@ -6,7 +6,7 @@
 }
 .disc{
     background-color: white;
-    top: 310px;
+    top: 350px;
     padding-top: 5px;
     width: 95%;
     height: 40px;
@@ -21,6 +21,7 @@
                  right:20px;
                  top:80px;
                  position: absolute;
+                 z-index: 1;
               }
 .carousel-control-prev-icon{
                 background-image : url(https://e7.pngegg.com/pngimages/737/275/png-clipart-computer-icons-arrow-icon-design-iphone-arrow-angle-triangle.png);                  
@@ -28,10 +29,18 @@
                 width: 40px;
                 left:20px;
                 top:80px;
+                z-index: 1;
                 position: absolute;
               }
-
+.carousel-indicators{
+  visibility: hidden;
+}
 .colori{
   background-color: #EAEDED;
   height:900px;
+  z-index: 2000;
+}
+.categoryr{
+  z-index:2000;
+  position: relative;
 }

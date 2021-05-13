@@ -1,10 +1,12 @@
 import React from "react";
 import {useStateValue} from "./StateProvider";
 import "./checkout.css";
+import FlipMove from "react-flip-move";
 import Subtotal from "./subtotal";
+//import {auth} from "./firebase.js";
 function Cart_checker(){
   // eslint-disable-next-line
-  const [{basket},dispatch]=useStateValue();
+  const [{basket,user},dispatch]=useStateValue();
   if(basket.length===0){
     return(
     <div>
@@ -28,7 +30,7 @@ function Cart_checker(){
 }
 function Ybasket(items){
   // eslint-disable-next-line
-  const [{basket},dispatch]=useStateValue();
+  const [{basket,user},dispatch]=useStateValue();
   const removeFromBasket=()=>{
         dispatch({
            type:"REMOVE_FROM_BASKET",
@@ -62,12 +64,15 @@ function Ybasket(items){
 }
 function Checkout(){
   // eslint-disable-next-line
-    const [{basket},dispatch]=useStateValue();
+    const [{basket,user},dispatch]=useStateValue();
   return(
       <div className="background">
+         {/* <h3>Hello {!user ?"Guest": user.email} </h3>  */}
         <div className="shopping_cart">
          {Cart_checker()}
+         <FlipMove>
          {basket.map(Ybasket)}
+         </FlipMove>
         </div>
         <Subtotal />
         </div>

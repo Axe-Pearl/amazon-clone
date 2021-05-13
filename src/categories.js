@@ -4,7 +4,7 @@ const categories=[
         key:1,
         cate:"Amazon Basics",
         imgurl:"https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg",
-        loc:"/amazon_basics"
+        loc:"/amazon-basics"
     },
     {
         id:2,

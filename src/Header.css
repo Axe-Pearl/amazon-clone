@@ -1,25 +1,31 @@
 .header{
-    height: 60px;
+    height: 70px;
     display:flex;
     align-items: center;
     position: sticky;
     top:0px;
     background-color: #131921;
+    z-index:3000;
 }
 .header_logo{
-   width:100px;
+   width:115px;
    object-fit: contain;
    margin:0 20px;
-   margin-top: 18px;
+   margin-left: 15px;
+   margin-top: 12px;
 }
 .header_search{
     display: flex;
-    flex: 1;
+    width: 1000px;
     align-items: center;
     border-radius: 24px;
 }
+.icon{
+   margin-bottom: 30px;
+}
 .search_icon{
     padding:5px;
+    height: 200px;
     background-color: orange;
 }
 .search{
@@ -34,11 +40,24 @@
 .header_option{
     display:flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    justify-content: space-evenly;
+    object-fit: contain;
+    padding-top: 5px;
+    margin-left: 20px;
     color: white;
     margin-top:5px;
     font-weight: 800;
+    line-height:1;
+}
+.header_option1{
+    display:flex;
+    flex-direction: column;
+    object-fit: contain;
+    padding-top: 5px;
+    margin-left: 20px;
+    color: white;
+    font-weight: 800;
+    line-height:0.5;
 }
 .basketcount{
     margin-left: 2px;
@@ -53,3 +72,41 @@
     outline: none;
     border: none
 }
+.location{
+    display: flex;
+    line-height: 1;
+    flex-direction: column;
+    float:left;
+    padding:10px 10px 5px 5px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.location:hover{
+    line-height: 1;
+    border:white solid;
+    border-width: thin;
+}
+.greet{
+    font-family: Arial,sans-serif;
+    color:thistle;
+    margin-left: 20px;
+    display: flex;
+    float: left;
+}
+/* .header2_option{
+    font:14px,Arial,"Amazon Ember",sans-serif;
+    margin-left: 10px;
+    margin-right:10px;
+    color:white;
+    font-weight: 800;
+    text-decoration: none;
+} 
+ .header2{
+    height: 40px;
+    display:flex;
+    position: sticky;
+    top:80px;
+    background-color:#0F1111;;
+    z-index:3000;
+} */
