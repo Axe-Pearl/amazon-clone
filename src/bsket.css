@@ -1,0 +1,17 @@
+.imageitems{
+    width:180px;
+    height: 180px;
+    display: flex;
+    float:left;
+}
+.title{
+ margin-top: 20px;
+ float: right;
+ font-family: "Amazon Ember",Arial,sans-serif;
+}
+.price{
+ margin-top: 20px;
+ right: 10px;
+ justify-content: flex-end;
+ float:right;
+} 

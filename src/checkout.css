@@ -29,7 +29,7 @@
     display:block;
     width:100%;
     height:0.8px;
-    background-color: grey;
+    background-color: lightgrey;
 }
  .added_items{
     display:flex;
@@ -38,7 +38,7 @@
     margin-top:30px;
     flex-direction: row;
 } 
-.imageitems{
+/* .imageitems{
     width:180px;
     height: 180px;
     display: flex;
@@ -48,13 +48,11 @@
  margin-top: 20px;
  float: right;
  font-family: "Amazon Ember",Arial,sans-serif;
-}
-.price{
- margin-top: 20px;
- right: 10px;
- justify-content: flex-end;
- float:right;
-} 
+}*/
+/* .price{
+display: flex;
+justify-self: self-end;
+} */
 .cart_info{
     padding-left: 0%;
     display:inline-flexbox;
@@ -75,6 +73,10 @@
         border-radius: 0.5rem;
         border-color: #D5D9D9;
         border-style: solid;
+}
+.remove_from_cart:active{
+    background:rgb(119, 92, 41);
+    border-width: 10px;
 }
 .subtotal{
     font-family: "Amazon Ember",Arial,sans-serif;

@@ -5,3 +5,7 @@
         border-style: solid;
         width: 9rem;
 }
+.add_to_cart:active{
+        width: 9.5rem;
+        background: rgb(158, 120, 48);
+}

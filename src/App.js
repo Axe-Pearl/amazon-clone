@@ -4,6 +4,7 @@ import Home from "./Home";
 import Basic from "./basic";
 import Checkout from "./checkout";
 import Login from "./Login";
+import Payment from "./Payment";
 import { useEffect } from "react";
 import { useStateValue} from "./StateProvider";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -32,6 +33,10 @@ function App() {
     <Router>
     <div className="app">
       <Switch>
+      <Route path="/payment">
+         <Header />
+         <Payment />
+      </Route>
         <Route path="/login">
          <Login />
         </Route>
